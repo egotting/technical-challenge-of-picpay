@@ -1,0 +1,7 @@
+namespace repositories;
+
+
+interface IUsuarioRepository
+{
+
+}

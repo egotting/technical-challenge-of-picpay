@@ -103,3 +103,4 @@
 /home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/obj/Debug/net8.0/technical-challenge-of-picpay.pdb
 /home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/obj/Debug/net8.0/technical-challenge-of-picpay.genruntimeconfig.cache
 /home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/obj/Debug/net8.0/ref/technical-challenge-of-picpay.dll
+/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/obj/Debug/net8.0/technical-challenge-of-picpay.sourcelink.json

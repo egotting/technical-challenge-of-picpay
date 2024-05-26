@@ -21,13 +21,16 @@ public class Usuario
   [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]
   public string Senha { get; set; }
 
+  public float Saldo { get; set; }
+
   public Usuario(int id, string fullName, string cpf_Cnpj,
-      string email, string senha)
+      string email, string senha, float saldo)
   {
     Id = id;
     FullName = fullName;
     Cpf_Cnpj = cpf_Cnpj;
     Email = email;
     Senha = senha;
+    Saldo = saldo;
   }
 }
