@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "loQKlziqpx7EWc3lekFa+tdFUZfiwyU97ct5fHQS9NLuvFNoOrfRzBF2h719GtFG631PoThXuYycZ9DHuWmurA==",
+  "dgSpecHash": "hlifJzT7yYcD3tC+sltCZ8sSwoPR0DokD/Sc5CKteFuprsPy/czf2Lsl5f1QINhl1mArS9fB3+I/f20XAkB73A==",
   "success": true,
-  "projectFilePath": "/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
+  "projectFilePath": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
   "expectedPackageFiles": [
     "/home/ego/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/ego/.nuget/packages/microsoft.aspnetcore.openapi/8.0.5/microsoft.aspnetcore.openapi.8.0.5.nupkg.sha512",

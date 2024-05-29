@@ -2755,11 +2755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
+      "projectUniqueName": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
       "projectName": "technical-challenge-of-picpay",
-      "projectPath": "/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
+      "projectPath": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
       "packagesPath": "/home/ego/.nuget/packages/",
-      "outputPath": "/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay/obj/",
+      "outputPath": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/ego/.nuget/NuGet/NuGet.Config"

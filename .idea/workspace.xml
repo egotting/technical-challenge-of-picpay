@@ -5,18 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d673b812-27b5-4018-acf0-413d730d9d76" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Migrations/ModelContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ModelContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/ModelContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/ModelContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/technical-challenge-of-picpay.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/technical-challenge-of-picpay.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/technical-challenge-of-picpay.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/technical-challenge-of-picpay.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/technical-challenge-of-picpay.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/technical-challenge-of-picpay.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/technical-challenge-of-picpay.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/technical-challenge-of-picpay.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/387f0cca-3d54-40f7-a5b9-d0367aed01cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/387f0cca-3d54-40f7-a5b9-d0367aed01cd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/387f0cca-3d54-40f7-a5b9-d0367aed01cd/storage_v2/_src_/database/Transacoes.c-iUDw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/387f0cca-3d54-40f7-a5b9-d0367aed01cd/storage_v2/_src_/database/Transacoes.c-iUDw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/UsuarioRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/UsuarioRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Repositories/interfaces/IUsuarioRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Repositories/interfaces/IUsuarioRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/technical-challenge-of-picpay.assets.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +23,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2gzGcZOKtQ7EevgCRAgpaiPwiT8" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenDatabaseViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/ego/src/github.com/fantaasyyy/technical-challenge-of-picpay",
+    "git-widget-placeholder": "tests",
+    "last_opened_file_path": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay",
     "settings.editor.selected.configurable": "preferences.keymap"
   },
   "keyToStringList": {

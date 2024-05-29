@@ -1,7 +1,9 @@
+using Models;
+using Models.DTO.Usuario;
+
 namespace repositories;
 
-
-interface IUsuarioRepository
+public interface IUsuarioRepository
 {
-
+  public Usuario GetAdmInfoUser(Guid p_id);
 }
