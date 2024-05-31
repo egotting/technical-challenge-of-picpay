@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Compile Remove="Models\DTO\Usuario\AdmUsuarioResponse.cs" />
+    <Compile Remove="Exceptions\NotAddNewLogista.cs" />
   </ItemGroup>
 
 </Project>

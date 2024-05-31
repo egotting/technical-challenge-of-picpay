@@ -9,3 +9,8 @@
 
 ## dia 3
     PM 10:16 - [*] Implementar os Repositories/Services
+
+## dia 4
+    PM 06:00 - [*] Implements Model Logista
+    PM 06:30 - [*] Implements Repositories/Services Logista
+    PM 06:49 - [*] Implements Controller Logista

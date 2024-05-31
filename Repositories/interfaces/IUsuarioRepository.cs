@@ -8,4 +8,6 @@ public interface IUsuarioRepository
   public IEnumerable<Usuario> GetInfoUser  ();
 
   public Usuario GetAdmInfoUser(string email);
+
+  public Usuario AddNewUser(Usuario newUser);
 }

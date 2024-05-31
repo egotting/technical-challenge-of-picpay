@@ -6,7 +6,10 @@ public record UsuarioRequest(
     [Required(ErrorMessage = "Precisa colocar o seu nome completo")] 
     string FullName,
     [Required(ErrorMessage = "Precisa colocar o seu nome completo")] 
-    string Cpf_Cnpj,
+    string Email,
     [Required(ErrorMessage = "Precisa colocar o seu nome completo")] 
-    string Email
+    string Cpf,
+    [Required(ErrorMessage = "Precisa colocar o seu nome completo")] 
+    string Senha,
+    float Saldo
     );

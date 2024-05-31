@@ -9,19 +9,29 @@ public class ModelContext : DbContext
     }
 
     public DbSet<Usuario> Usuarios { get; set; }
+    public DbSet<Logista> Logistas { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Usuario>(usuario =>
         {
             usuario.HasKey(k => k.Id);
-            
-            usuario.HasIndex(k => k.Cpf_Cnpj)
+
+            usuario.HasIndex(k => k.Cpf)
                 .IsUnique();
 
             usuario.HasIndex(k => k.Email)
                 .IsUnique();
-            usuario.HasIndex(k => k.PId)
+        });
+
+        modelBuilder.Entity<Logista>(logista =>
+        {
+            logista.HasKey(k => k.Id);
+
+            logista.HasIndex(k => k.Cnpj)
+                .IsUnique();
+
+            logista.HasIndex(k => k.Email)
                 .IsUnique();
         });
     }

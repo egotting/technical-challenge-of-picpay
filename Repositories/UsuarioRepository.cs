@@ -25,4 +25,11 @@ public class UsuarioRepository : IUsuarioRepository
              .FirstOrDefault(x => x.Email == email)
            ?? throw new NotFoundUsuario("Usuario nao achado");
   }
+
+  public Usuario AddNewUser(Usuario newUser)
+  {
+    _context.Usuarios.Add(newUser);
+    _context.SaveChangesAsync();
+    return newUser;
+  }
 }

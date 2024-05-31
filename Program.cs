@@ -18,6 +18,8 @@ builder.Services.AddDbContext<ModelContext>(options =>
 });
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioServices, UsuarioServices>();
+builder.Services.AddScoped<ILogistaRepository, LogistaRepository>();
+builder.Services.AddScoped<ILogistaServices, LogistaServices>();
 
 var app = builder.Build();
 app.UseRouting();

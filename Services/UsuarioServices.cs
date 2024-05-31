@@ -18,8 +18,8 @@ public class UsuarioServices : IUsuarioServices
     public IEnumerable<UsuarioResponse> GetInfoUser()
     {
         return _repo.GetInfoUser().Select(user =>
-            new UsuarioResponse(user.FullName, user.Cpf_Cnpj, user.Email,
-                user.Saldo, user.Chave)).ToList();
+            new UsuarioResponse(user.FullName, user.Cpf, user.Email,
+                user.Saldo)).ToList();
     }
 
     public Usuario GetAdmInfoUser(string email)
@@ -28,4 +28,11 @@ public class UsuarioServices : IUsuarioServices
         return user;
     }
 
+    public UsuarioResponse AddNewUser(UsuarioRequest request)
+    {
+       var new_user = new Usuario(request.FullName, request.Cpf,request.Email, request.Senha, request.Saldo);
+
+       new_user = _repo.AddNewUser(new_user);
+       return new UsuarioResponse(new_user.FullName,new_user.Email,new_user.Cpf, new_user.Saldo);
+    }
 }

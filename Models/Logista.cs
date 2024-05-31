@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models;
 
-public class Usuario
+public class Logista
 {
     [Key] public int Id { get; set; }
 
@@ -12,7 +12,7 @@ public class Usuario
 
 
     [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]
-    public string Cpf { get; set; }
+    public string Cnpj { get; set; }
 
     [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]
     public string Email { get; set; }
@@ -23,15 +23,15 @@ public class Usuario
     public float Saldo { get; set; }
 
 
-    public Usuario()
+    public Logista()
     {
     }
 
-    public Usuario( string fullName, string cpf,
+    public Logista(string fullName, string cnpj,
         string email, string senha, float saldo)
     {
         FullName = fullName;
-        Cpf = cpf;
+        Cnpj = cnpj;
         Email = email;
         Senha = senha;
         Saldo = saldo;

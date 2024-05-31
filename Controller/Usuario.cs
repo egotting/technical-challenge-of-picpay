@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Models.DTO.Usuario;
 using repositories;
 using technical_challenge_of_picpay.Services.interfaces;
 
@@ -28,5 +29,19 @@ public class Usuario : ControllerBase
   public IActionResult GetAdmInfoUser(string email)
   {
     return Ok(_services.GetAdmInfoUser(email));
+  }
+
+  [HttpPost]
+  [Route("/Usuario")]
+  public IActionResult AddNewUser(UsuarioRequest request)
+  {
+    if (!ModelState.IsValid)
+    {
+      return BadRequest(request);
+    }
+
+    var new_student = _services.AddNewUser(request);
+
+    return Ok(new_student);
   }
 }
