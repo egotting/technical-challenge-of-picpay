@@ -24,11 +24,5 @@ public class ModelContext : DbContext
             usuario.HasIndex(k => k.PId)
                 .IsUnique();
         });
-
-        OnModelCreatingPartial(modelBuilder);
-    }
-
-    private void OnModelCreatingPartial(ModelBuilder modelBuilder)
-    {
     }
 }

@@ -1,5 +1,4 @@
 using Models;
-using Models.DTO.Usuario;
 using repositories;
 using technical_challenge_of_picpay.Exceptions;
 
@@ -15,10 +14,15 @@ public class UsuarioRepository : IUsuarioRepository
     _context = context;
   }
 
-  public Usuario GetAdmInfoUser(Guid p_id)
+  public IEnumerable<Usuario> GetInfoUser()
   {
-    return _context.Usuarios.Where(u => u.PId == p_id)
-             .FirstOrDefault(x => x.PId == p_id) 
-           ?? throw new NotFoundSaldoExceptions("Not found usuario");
+    return _context.Usuarios.ToList();
+  }
+
+  public Usuario GetAdmInfoUser(string email)
+  {
+    return _context.Usuarios.Where(e => e.Email == email)
+             .FirstOrDefault(x => x.Email == email)
+           ?? throw new NotFoundUsuario("Usuario nao achado");
   }
 }

@@ -1,5 +1,10 @@
 using Models;
 using Microsoft.EntityFrameworkCore;
+using repositories;
+using technical_challenge_of_picpay.Repositories;
+using technical_challenge_of_picpay.Services;
+using technical_challenge_of_picpay.Services.interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,8 +16,12 @@ builder.Services.AddDbContext<ModelContext>(options =>
 {
   options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioServices, UsuarioServices>();
 
 var app = builder.Build();
+app.UseRouting();
+app.UseEndpoints(endpoint => { endpoint.MapControllers(); });
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

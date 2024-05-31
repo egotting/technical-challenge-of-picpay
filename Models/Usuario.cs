@@ -1,7 +1,5 @@
-using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Models;
 
@@ -9,7 +7,6 @@ public class Usuario
 {
     [Key] public int Id { get; set; }
 
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public Guid PId { get; set; }
 
     [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]

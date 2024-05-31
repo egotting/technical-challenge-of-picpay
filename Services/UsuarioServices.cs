@@ -1,3 +1,4 @@
+using Models;
 using Models.DTO.Usuario;
 using repositories;
 using technical_challenge_of_picpay.Services.interfaces;
@@ -12,8 +13,19 @@ public class UsuarioServices : IUsuarioServices
     {
         _repo = repo;
     }
-    public UsuarioResponse GetInfoUser(Guid p_id)
+
+
+    public IEnumerable<UsuarioResponse> GetInfoUser()
     {
-        return null;
+        return _repo.GetInfoUser().Select(user =>
+            new UsuarioResponse(user.FullName, user.Cpf_Cnpj, user.Email,
+                user.Saldo, user.Chave)).ToList();
     }
+
+    public Usuario GetAdmInfoUser(string email)
+    {
+        var user = _repo.GetAdmInfoUser(email);
+        return user;
+    }
+
 }
