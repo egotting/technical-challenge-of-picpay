@@ -10,4 +10,5 @@ public interface IUsuarioRepository
   public Usuario GetAdmInfoUser(string email);
 
   public Usuario AddNewUser(Usuario newUser);
+
 }

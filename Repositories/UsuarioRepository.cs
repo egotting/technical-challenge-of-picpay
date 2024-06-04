@@ -32,4 +32,5 @@ public class UsuarioRepository : IUsuarioRepository
     _context.SaveChangesAsync();
     return newUser;
   }
+
 }

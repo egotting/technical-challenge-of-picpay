@@ -10,6 +10,7 @@ public class ModelContext : DbContext
 
     public DbSet<Usuario> Usuarios { get; set; }
     public DbSet<Logista> Logistas { get; set; }
+    public DbSet<Transacao> Transacoes { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -33,6 +34,11 @@ public class ModelContext : DbContext
 
             logista.HasIndex(k => k.Email)
                 .IsUnique();
+        });
+        
+        modelBuilder.Entity<Transacao>(transacao =>
+        {
+            transacao.HasKey(k => k.Id);
         });
     }
 }
