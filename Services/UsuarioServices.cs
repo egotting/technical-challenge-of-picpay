@@ -33,6 +33,6 @@ public class UsuarioServices : IUsuarioServices
        var new_user = new Usuario(request.FullName, request.Cpf,request.Email, request.Senha, request.Saldo);
 
        new_user = _repo.AddNewUser(new_user);
-       return new UsuarioResponse(new_user.FullName,new_user.Email,new_user.Cpf, new_user.Saldo);
+       return new UsuarioResponse(new_user.FullName,new_user.Cpf,new_user.Email, new_user.Saldo);
     }
 }

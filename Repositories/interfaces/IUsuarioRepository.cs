@@ -11,4 +11,7 @@ public interface IUsuarioRepository
 
   public Usuario AddNewUser(Usuario newUser);
 
+  public Logista TransactionForLogista(Logista log);
+
+  public void UpdateUser(Usuario UserRemetente,Usuario UserRecebedor);
 }

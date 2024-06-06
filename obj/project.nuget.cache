@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hlifJzT7yYcD3tC+sltCZ8sSwoPR0DokD/Sc5CKteFuprsPy/czf2Lsl5f1QINhl1mArS9fB3+I/f20XAkB73A==",
+  "dgSpecHash": "ZHtHVvQFQwhsTcSrPNQN/qJjovhXI2mEtdfE/ZucFr/0L2oJdYOjmazNVBU9vKAF2fRRmiY+ZYwowE3qLOLp4g==",
   "success": true,
   "projectFilePath": "/home/ego/src/github.com/egotting/technical-challenge-of-picpay/technical-challenge-of-picpay.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,7 @@
     "/home/ego/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/home/ego/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/ego/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
-    "/home/ego/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.5/microsoft.aspnetcore.app.ref.8.0.5.nupkg.sha512"
+    "/home/ego/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
   ],
   "logs": []
 }

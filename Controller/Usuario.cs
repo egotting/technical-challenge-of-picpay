@@ -44,4 +44,6 @@ public class Usuario : ControllerBase
 
     return Ok(new_student);
   }
+  
+  
 }

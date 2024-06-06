@@ -4,22 +4,33 @@ namespace Models;
 
 public class Transacao
 {
-    [Key]
-    public int Id { get; set; }
+    [Key] public int Id { get; set; }
+
     [Required(ErrorMessage = "Precisa por o nome do remetente")]
-    public string NomeDoRemetente { get; set; }
-    
+    public string EmailDoRemetente { get; set; }
+
     [Required(ErrorMessage = "Precisa por o nome do recebedor")]
-    public string NomeDoRecebedor { get; set; }
-    
+    public string EmailDoRecebedorUsuario { get; set; }
+
+    [Required(ErrorMessage = "Precisa por o nome do recebedor")]
+    public string EmailDoRecebedorLogista { get; set; }
+
     [Required(ErrorMessage = "Precisa por a quantidade que sera transferida")]
     public float QuantiaTransferida { get; set; }
+
     public DateTime HoraDoEnvio { get; set; }
 
-    public Transacao(string nomeDoRemetente, string nomeDoRecebedor, float quantiaTransferida)
+
+    public Transacao()
     {
-        NomeDoRemetente = nomeDoRemetente;
-        NomeDoRecebedor = nomeDoRecebedor;
+    }
+
+    public Transacao(string emailDoRemetente, string emailDoRecebedorUsuario, string emailDoRecebedorLogista,
+        float quantiaTransferida)
+    {
+        EmailDoRemetente = emailDoRemetente;
+        EmailDoRecebedorUsuario = emailDoRecebedorUsuario;
+        EmailDoRecebedorLogista = emailDoRecebedorLogista;
         QuantiaTransferida = quantiaTransferida;
         HoraDoEnvio = DateTime.Now;
     }
