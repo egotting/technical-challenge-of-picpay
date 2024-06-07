@@ -33,10 +33,6 @@ public class UsuarioRepository : IUsuarioRepository
     }
 
 
-    public Logista TransactionForLogista(Logista log)
-    {
-        throw new NotImplementedException();
-    }
 
     public void UpdateUser(Usuario UserRemetente, Usuario UserRecebedor)
     {
