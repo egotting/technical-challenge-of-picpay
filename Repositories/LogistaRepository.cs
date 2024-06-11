@@ -13,8 +13,8 @@ public class LogistaRepository : ILogistaRepository
     {
         _context = context;
     }
-    
-    
+
+
     public IEnumerable<Logista> GetInfoLogista()
     {
         return _context.Logistas.ToList();
@@ -23,7 +23,7 @@ public class LogistaRepository : ILogistaRepository
     public Logista GetAdmInfoLogista(string cnpj)
     {
         return _context.Logistas.Where(e => e.Cnpj == cnpj)
-            .FirstOrDefault(u => u.Cnpj == cnpj) 
+                   .FirstOrDefault(u => u.Cnpj == cnpj)
                ?? throw new NotFoundLogista("Not found logista");
     }
 
@@ -32,5 +32,26 @@ public class LogistaRepository : ILogistaRepository
         _context.Logistas.Add(newLogi);
         _context.SaveChangesAsync();
         return newLogi;
+    }
+
+    public void UpdateLogista(Usuario usuarioRemetente, Logista logistaRecebedor)
+    {
+        using (var transection = _context.Database.BeginTransaction())
+        {
+            try
+            {
+                _context.Usuarios.Update(usuarioRemetente);
+                _context.Logistas.Update(logistaRecebedor);
+                _context.SaveChanges();
+
+                transection.Commit();
+            }
+            catch (Exception e)
+            {
+                transection.Rollback();
+                Console.WriteLine(e.Message);
+                throw;
+            }
+        }
     }
 }

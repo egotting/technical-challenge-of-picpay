@@ -34,5 +34,6 @@ public class ModelContext : DbContext
             logista.HasIndex(k => k.Email)
                 .IsUnique();
         });
+        
     }
 }

@@ -8,4 +8,6 @@ public interface ILogistaRepository
     public Logista GetAdmInfoLogista(string cnpj);
 
     public Logista AddNewLogista(Logista newLogi);
+
+    public void UpdateLogista(Usuario usuarioRemetente, Logista logistaRecebedor);
 }

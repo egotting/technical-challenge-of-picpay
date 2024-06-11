@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.Storage;
 using Models.DTO;
 using technical_challenge_of_picpay.Services.interfaces;
 
@@ -25,6 +26,19 @@ public class Transaction : ControllerBase
         }
 
         _service.TransactionUser(user); 
+        return Created();
+    }
+
+    [HttpPatch]
+    [Route("/TransactionLogist")]
+    public IActionResult TransactionLogist(TransactionRequestLogista logist)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        
+        _service.TransactionUserToLogist(logist);
         return Created();
     }
 }

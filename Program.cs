@@ -20,6 +20,7 @@ builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioServices, UsuarioServices>();
 builder.Services.AddScoped<ILogistaRepository, LogistaRepository>();
 builder.Services.AddScoped<ILogistaServices, LogistaServices>();
+builder.Services.AddScoped<ITransacaoService, TransacaoService>();
 
 var app = builder.Build();
 app.UseRouting();
