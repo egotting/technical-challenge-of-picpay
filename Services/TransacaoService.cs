@@ -17,6 +17,7 @@ public class TransacaoService : ITransacaoService
         _lrepo = lrepo;
     }
 
+
     public void TransactionUser(TransactionRequestUser transaction)
     {
         var search_remetente =
@@ -43,15 +44,17 @@ public class TransacaoService : ITransacaoService
     public void TransactionUserToLogist(TransactionRequestLogista transaction)
     {
         var search_remetente = _urepo.GetAdmInfoUser(transaction.EmailRemetente) ??
-                               throw new NotFoundUsuario("Not found user");
+                               throw new NotFoundUsuario("Not found user"); // Pegando o email do usuario
         var search_recebedor = _lrepo.GetAdmInfoLogista(transaction.CnpjRecebedor) ??
-                               throw new NotFoundLogista("Not found logist");
-    
-        if (search_remetente.Saldo >= transaction.QuantiaTransferida)
+                               throw new NotFoundLogista("Not found logist"); // pegando o cnpj do logista
+
+        if (search_remetente.Saldo >=
+            transaction.QuantiaTransferida) // verificando se o saldo do remetente é compativel com o envio
         {
-            search_recebedor.Saldo += transaction.QuantiaTransferida;
-            search_remetente.Saldo -= transaction.QuantiaTransferida;
-            _lrepo.UpdateLogista(search_remetente, search_recebedor);
+            search_recebedor.Saldo +=
+                transaction.QuantiaTransferida; // se for vai somar o valor atual da logista com oq ele tem
+            search_remetente.Saldo -= transaction.QuantiaTransferida; // se for ele vai diminuir o valor do remetente
+            _lrepo.UpdateLogista(search_remetente, search_recebedor); // Atualizando no banco o logista
         }
         else
         {

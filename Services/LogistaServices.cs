@@ -14,12 +14,12 @@ public class LogistaServices : ILogistaServices
     {
         _repo = repo;
     }
-    
+
     public IEnumerable<LogistaResponse> GetInfoLogista()
     {
-        return _repo.GetInfoLogista().Select(logista => 
-            new LogistaResponse(logista.FullName,logista.Cnpj,
-                logista.Email,logista.Saldo)).ToList();
+        return _repo.GetInfoLogista().Select(logista =>
+            new LogistaResponse(logista.FullName, logista.Cnpj,
+                logista.Email, logista.Saldo)).ToList();
     }
 
     public Logista GetInfoAdmLogista(string cnpj)
@@ -28,12 +28,13 @@ public class LogistaServices : ILogistaServices
         return logista;
     }
 
-    public AddNewLogistaResponse AddNewLogista(LogistaRequest request)
+    public AddLogistaResponse AddNewLogista(LogistaRequest request)
     {
-        var newLogi = new Logista(request.FullName, request.Email, request.Cnpj, request.Senha, request.Saldo);
+        var newLogi = new Logista(request.FullName, request.Cnpj, request.Email, request.Senha, request.ConfirmSenha,
+            request.Saldo);
 
         newLogi = _repo.AddNewLogista(newLogi);
 
-        return new AddNewLogistaResponse(newLogi.FullName, newLogi.Email, newLogi.Cnpj, newLogi.Senha);
+        return new AddLogistaResponse(newLogi.FullName, newLogi.Cnpj, newLogi.Email, newLogi.Senha);
     }
 }

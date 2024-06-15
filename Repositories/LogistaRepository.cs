@@ -34,6 +34,9 @@ public class LogistaRepository : ILogistaRepository
         return newLogi;
     }
 
+    /*
+     * Atualizando logista e usuario
+     */
     public void UpdateLogista(Usuario usuarioRemetente, Logista logistaRecebedor)
     {
         using (var transection = _context.Database.BeginTransaction())

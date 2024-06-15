@@ -33,7 +33,7 @@ public class UsuarioRepository : IUsuarioRepository
     }
 
 
-
+    /* Atualizando transação entre usuarios */
     public void UpdateUser(Usuario UserRemetente, Usuario UserRecebedor)
     {
         using (var transaction = _context.Database.BeginTransaction())

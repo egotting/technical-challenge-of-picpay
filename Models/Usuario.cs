@@ -20,6 +20,9 @@ public class Usuario
     [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]
     public string Senha { get; set; }
 
+    [Required(ErrorMessage = "precisa de um valor", AllowEmptyStrings = false)]
+    [Compare(nameof(Senha), ErrorMessage = "Senha incorreta")]
+    public string ConfirmSenha { get; set; }
     public float Saldo { get; set; }
 
 
@@ -27,13 +30,14 @@ public class Usuario
     {
     }
 
-    public Usuario( string fullName, string cpf,
-        string email, string senha, float saldo)
+    public Usuario(string fullName, string cpf,
+        string email, string senha,string confirmSenha, float saldo)
     {
         FullName = fullName;
         Cpf = cpf;
         Email = email;
         Senha = senha;
+        ConfirmSenha = confirmSenha;
         Saldo = saldo;
     }
 }

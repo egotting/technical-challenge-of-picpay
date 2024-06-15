@@ -6,7 +6,6 @@ using technical_challenge_of_picpay.Services.interfaces;
 namespace technical_challenge_of_picpay.Controller;
 
 [ApiController]
-[Route("v1")]
 public class Usuario : ControllerBase
 {
   private readonly IUsuarioServices _services;

@@ -9,5 +9,5 @@ public interface ILogistaServices
 
     public Logista GetInfoAdmLogista(string cnpj);
 
-    public AddNewLogistaResponse AddNewLogista(LogistaRequest request);
+    public AddLogistaResponse AddNewLogista(LogistaRequest request);
 }

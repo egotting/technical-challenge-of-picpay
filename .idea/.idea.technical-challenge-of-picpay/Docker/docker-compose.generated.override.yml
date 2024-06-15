@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  technical-challenge-of-picpay:
+    build:
+      context: "/home/ego/src/github.com/egotting/technical-challenge-of-picpay"
+      dockerfile: "Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/technical-challenge-of-picpay.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "technical-challenge-of-picpay:dev"
+    ports: []
+    volumes:
+    - "/home/ego/.nuget/packages:/home/app/.nuget/packages"
+    - "/home/ego/src/github.com/egotting/technical-challenge-of-picpay:/app:rw"
+    - "/home/ego/src/github.com/egotting/technical-challenge-of-picpay:/src:rw"
+    working_dir: "/app"

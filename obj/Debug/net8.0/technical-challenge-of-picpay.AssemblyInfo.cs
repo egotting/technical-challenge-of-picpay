@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("technical-challenge-of-picpay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5740c2e2f99158f82a00a458f07b25ad88f4305")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a31da0fe76f29eaab7b94822dedd9abb9be6044b")]
 [assembly: System.Reflection.AssemblyProductAttribute("technical-challenge-of-picpay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("technical-challenge-of-picpay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
